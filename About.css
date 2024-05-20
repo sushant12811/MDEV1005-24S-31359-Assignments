@@ -8,12 +8,11 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Assets/About\ us.png");
     background-repeat: no-repeat;
     background-size: cover;
+    display: block;
     height: 100%;
 }
 
 nav {
-    /* background-color: transparent; */
-    flex: 1;
     justify-content: right;
 }
 
@@ -55,7 +54,7 @@ header>h1 {
 
 #contactId{
     position: relative;
-    top: 250px;
+    top: 200px;
     left:50px;
     color: #7BD3EA;
     font-weight: bold;
@@ -76,7 +75,7 @@ header>h1 {
 }
 
 .content {
-    margin-top: 300px;
+    margin-top: 250px;
     display: flex;
     padding: 30px;
     background-color:#EEF7FF;
@@ -102,13 +101,16 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 600px)  {
+@media (max-width: 800px)   {
 
     body {
         background-size: cover;
         height: auto;
     }
-    
+    .nav-link {
+        font-size: 16px;
+        margin-right: 5px;
+    }
     header > h1 {
         font-size: 50px;
         margin: 20px;
@@ -123,15 +125,16 @@ footer {
         display: block;
         padding: 10px;
     }
+
+    .content{
+        flex-direction: column;
+    }
     
     .about-content {
         margin: 10px;
         padding: 20px;
     }
     
-    .nav-link {
-        font-size: 16px;
-        margin-right: 5px;
-    }
+   
 
 }

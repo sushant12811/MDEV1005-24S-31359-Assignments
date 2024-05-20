@@ -86,8 +86,6 @@ h1 {
 }
 
 
-
-
 blockquote {
     font-size: x-large;
     font-style: italic;
@@ -98,26 +96,12 @@ blockquote {
 
 button {
     margin-left: 150px;
-    
-}
-
-.carousel {
-    padding: 20px 50px 0px 50px;
-    margin: 0px;
 
 }
-
-.carousel-item {
-    height: 100%;
-    width: 100%;
-
-
-}
-
 
 
 .mid-section {
-    margin-top: 400px;
+    margin-top: 340px;
     margin-right: 50px;
     margin-left: 50px;
     border-radius: 15px;
@@ -149,6 +133,18 @@ button {
     margin: 0px;
     text-align: center;
     padding-top: 1rem;
+}
+.carousel {
+    padding: 20px 50px 0px 50px;
+    margin: 0px;
+
+}
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+
+
 }
 
 #footer {
