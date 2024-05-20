@@ -1,0 +1,173 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+
+
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.nav-link:hover {
+    color: #7BD3EA;
+    transform: scale(1.2);
+
+}
+
+nav a:after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.5s ease;
+    bottom: 20%;
+
+}
+
+nav a:hover::after {
+    width: 100%;
+    height: 2px;
+    background-color: #7BD3EA;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+#back-img{
+    width: 100%;
+    height: auto;
+}
+
+.overlay-class {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    
+}
+
+
+header>h1 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    color: white;
+    font-size: 90px;
+    font-weight: bolder;
+
+
+}
+
+
+
+.first,
+.third {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+
+}
+
+.second,
+.fourth {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px;
+
+
+}
+
+.service-img {
+    height: 320px;
+    width: 480px;
+    border: 2px solid #38419D;
+    border-radius: 10px;
+    margin-right: 12rem;
+}
+
+.second>.service-img,
+.fourth>.service-img {
+    margin-left: 10rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+
+}
+
+.details{
+    margin-top: 80px;
+      
+}
+
+#para-content{
+    text-align: justify;
+    color: grey;
+
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    nav { 
+        text-align: center;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        margin-right: 5px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    header > h1 {
+        top: 20px;
+        left: 10px;
+        font-size: 50px;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        display: block;
+        margin: 20px;
+    }
+
+    .service-img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .details {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .second > .service-img,
+    .fourth > .service-img {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    #para-content {
+        font-size: 14px;
+    }
+}
