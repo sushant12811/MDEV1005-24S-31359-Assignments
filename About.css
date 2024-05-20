@@ -57,11 +57,14 @@ header>h1 {
     position: relative;
     top: 250px;
     left:50px;
-    background-color: #7BD3EA;
-    color: black;
+    color: #7BD3EA;
     font-weight: bold;
     
 
+}
+
+#contactId:hover{
+    color: #38419D;
 }
 
 #name {
